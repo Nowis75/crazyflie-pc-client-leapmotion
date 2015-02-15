@@ -32,4 +32,18 @@ pip install --pre pysdl2 pyusb pyqtgraph<br>
 pip install hg+http://bitbucket.org/pygame/pygame<br>
 pip install pyusb
 
+Install Leapmotion 
+------------------
+
+1. Download LEapmotion SDK - https://developer.leapmotion.com/downloads/skeletal-beta?platform=osx&version=2.2.2.24469
+2. In this package install Leap_Motion_Installer_release_public_mac_x64_2.2.2+24469_ah1842.dmg
+3. Connect and test Leapmotion sensor
+
+Install Crazyflie PC Client
+---------------------------
+
+1. Download repository crazy-pc-client-leapmotion
+2. Unpack zip file on disk
+3. Run crazy-pc-client-leapmotion/bin/cfclient
+
 
