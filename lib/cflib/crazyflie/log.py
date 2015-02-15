@@ -315,5 +315,5 @@ class Log():
                     block = b
             if (block is not None):
                 block.unpack_log_data(logdata)
-            else:
-                logger.warning("Error no LogEntry to handle block=%d", blockId)
+            #else:
+                #logger.warning("Error no LogEntry to handle block=%d", blockId)

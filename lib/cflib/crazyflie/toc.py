@@ -154,15 +154,15 @@ class TocFetcher:
     def _new_packet_cb(self, packet):
         chan = packet.channel
         if (chan != 0):
-            logger.error("Got packet that was not on TOC channel, TOC fetch"
-                         " will probably not succeed")
+            #logger.error("Got packet that was not on TOC channel, TOC fetch"
+            #             " will probably not succeed")
             return
         payload = struct.pack("B" * (len(packet.datal) - 1), *packet.datal[1:])
 
         if (self.state == GET_TOC_INFO):
             [self.nbrOfItems, self._crc] = struct.unpack("<BI", payload[:5])
-            logger.debug("[%d]: Got TOC CRC, %d items and crc=0x%08X",
-                         self.port, self.nbrOfItems, self._crc)
+            #logger.debug("[%d]: Got TOC CRC, %d items and crc=0x%08X",
+            #             self.port, self.nbrOfItems, self._crc)
 
             cache_data = self._toc_cache.fetch(self._crc)
             if (cache_data):
