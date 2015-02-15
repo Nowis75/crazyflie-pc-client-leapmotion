@@ -7,7 +7,7 @@ It is full example for Crazyflie with connect Leapmotion for Mac OSX.
 Install Python
 --------------
 
-1. Install Homebrew:
+1. Install Homebrew<br>
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 2. Run:
